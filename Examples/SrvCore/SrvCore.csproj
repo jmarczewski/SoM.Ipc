@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-SrvConsole-59eb2cd2-111a-4a78-925a-a40713c7e374</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\SoM.Ipc\SoM.Ipc.csproj" />
+    <ProjectReference Include="..\..\SoM.WatsonTcp\SoM.WatsonTcp.csproj" />
+    <ProjectReference Include="..\DemoDto\DemoDto.csproj" />
+  </ItemGroup>
+</Project>

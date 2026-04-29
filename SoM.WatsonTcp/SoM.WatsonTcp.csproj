@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageTags>SoM.Ipc;Ipc; Rpc; Inter-Process-Communication; Remote-Procedure-Call</PackageTags>
+    <PackageProjectUrl>https://github.com/jmarczewski/SoM.Ipc.git</PackageProjectUrl>
+    <Description>WatsonTcp connector for use with the SoM.Ipc library.</Description>
+    <Copyright>Jakub Marczewski</Copyright>
+    <PackageReadmeFile>readme.MD</PackageReadmeFile>
+    <Title>SoM.Ipc WatsonTcp connector </Title>
+    <Version>0.5.0-pre</Version>
+    <PackageReleaseNotes>Pre-release</PackageReleaseNotes>
+    <PackageId>SoM.WatsonTcp</PackageId>
+    <Authors>SoM</Authors>
+    <PackageLicenseExpression>  MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.7" />
+    <PackageReference Include="WatsonTcp" Version="6.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SoM.Ipc\SoM.Ipc.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="readme.MD">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

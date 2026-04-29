@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SoM.Ipc</RootNamespace>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/jmarczewski/SoM.Ipc.git</PackageProjectUrl>
+    <Copyright>Jakub Marczewski @ 2026</Copyright>
+    <Title>SoM.Ipc  ( some Inter-Process-Communication)</Title>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>SoM.Ipc</PackageId>
+    <Version>0.5.0-pre</Version>
+    <Authors>SoM</Authors>
+    <Description>A  .Net API style (Attributes put on endpoint methods) framework-independent simple  IPC library.
+Allows fast switching between  many underlying transport like WatsonTcp, SignalR etc</Description>
+    <PackageTags>Ipc; Rpc; Inter-Process-Communication; Remote-Procedure-Call</PackageTags>
+    <PackageReleaseNotes>Initial pre-release</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.7" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.7" />
+    <PackageReference Include="System.Text.Json" Version="10.0.7" />
+  </ItemGroup>
+</Project>

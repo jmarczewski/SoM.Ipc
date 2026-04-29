@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Examples/">
+    <File Path="launch_srv.bat" />
+    <Project Path="Examples/CltFramework/CltFramework.csproj" Id="c1eabad8-1411-4ecb-8913-1add02866805" />
+    <Project Path="Examples/DemoDto/DemoDto.csproj" />
+    <Project Path="Examples/SrvCore/SrvCore.csproj" />
+  </Folder>
+  <Project Path="SoM.Ipc/SoM.Ipc.csproj" />
+  <Project Path="SoM.WatsonTcp/SoM.WatsonTcp.csproj" />
+</Solution>
